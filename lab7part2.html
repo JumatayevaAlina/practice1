@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 7 part2</title>
+  </head>
+  <body>
+    <h3>Task1</h3>
+    <script>
+    var answer = prompt("Are we there yet?");
+ 
+while (answer !== "yes" && answer !== "yeah") {
+    var answer = prompt("Are we there yet?");
+}
+ 
+alert("Yay, we finally made it!");
+</script>
+
+    <h3>Task2</h3>
+    <p>Print all numbers between -10 and 19</p>
+    <input type="button" onclick="task21()" value="Task21">
+  <p id="task21"></p> 
+      <script>
+    function task21() {
+  var X =" ";
+  for(i = -10; i <= 19; i++) 
+      {
+    X += i + " ";
+      }
+    document.getElementById("task21").innerHTML = X;
+    }
+      </script>
+
+
+    <p>Print all even numbers between 10 and 40</p>
+    <input type="button" onclick="task22()" value="Task22">
+  <p id="task22"></p> 
+      <script>
+    function task22() {
+      var X =" ";
+      for(i = 10; i <= 40; i++) {
+        if (i % 2 == 0)
+        X += i + " ";
+      }
+      document.getElementById("task22").innerHTML = X;
+    }
+      </script>
+
+
+    <p>Print all odd numbers between 300 and 333</p>
+    <input type="button" onclick="task23()" value="Task23">
+  <p id="task23"></p> 
+      <script>
+    function task23() {
+      var X =" ";
+      for(i = 300; i <= 333; i++) {
+        if (i % 2 == 1) {
+        X += i + " "; }
+      }
+      document.getElementById("task23").innerHTML = X;
+    }
+      </script>
+
+
+     <p>Print numbers divisible by 5 and 3 between 5 and 50</p>
+    <input type="button" onclick="task24()" value="Task24">
+  <p id="task24"></p> 
+      <script>
+    function task24() {
+      var X =" ";
+      for(i = 5; i <= 50; i++) {
+        if (i % 5 == 0 && i % 3 == 0) {
+        X += i + " "; }
+      }
+      document.getElementById("task24").innerHTML = X;
+    }
+      </script>
+
+    <h3>Task3</h3>
+    <p>Print all numbers between -10 and 19</p>
+    <input type="button" onclick="task25()" value="Task25">
+  <p id="task25"></p> 
+      <script>
+    function task25() {
+      var X = "";
+      var i = -10;
+      while (i < 20) {
+        X += i + " ";
+          i++;
+      }
+      document.getElementById("task25").innerHTML = X;
+    }
+      </script>
+
+
+    <p>Print all even numbers between 10 and 40</p>
+    <input type="button" onclick="task26()" value="Task26">
+  <p id="task26"></p> 
+      <script>
+    function task26() {
+      var X = "";
+      var i = 10;
+      while (i < 41) {
+        if (i % 2 == 0) {
+          X += i + " "; }
+          i++; 
+        }
+        document.getElementById("task26").innerHTML = X;
+      }
+      </script>
+
+
+    <p>Print all odd numbers between 300 and 333</p>
+    <input type="button" onclick="task27()" value="Task27">
+  <p id="task27"></p> 
+      <script>
+    function task27() {
+      var X = "";
+      var i = 300;
+      while (i < 334) {
+        if (i % 2 == 1) {
+          X += i + " "; }
+          i++;
+        }
+        document.getElementById("task27").innerHTML = X;
+      }
+      </script>
+
+
+    <p>Print numbers divisible by 5 and 3 between 5 and 50</p>
+    <input type="button" onclick="task28()" value="Task28">
+  <p id="task28"></p> 
+      <script>
+    function task28() {
+      var X = "";
+      var i = 10;
+      while (i < 51) {
+        if (i % 5 == 0 && i % 3 == 0) {
+          X += i + " "; }
+          i++;
+        }
+        document.getElementById("task28").innerHTML = X;
+      }
+      </script>
+
+
+
+  </body>
+</html>
